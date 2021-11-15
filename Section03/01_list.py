@@ -45,10 +45,21 @@ print(list1)
 #6번 요소를 3.1415로 수정
 list1[6] = 3.1415
 print(list1)
-#리스트 요소 삭제
+#리스트 요소 삭제 --- 인덱스 번호로 삭제
 list1.pop() #맨 마지막 요소 삭제
 print(list1)
 list1.pop(3)#3번 인덱스에 대한 요소 삭제
+print(list1)
+#리스트 요소삭제 --- 값으로 검색해서 삭제
+list1.remove(3.1415);
+print(list1)
+#안녕하세요 값 삭제
+list1.append("안녕하세요")
+print(list1)
+list1.remove("안녕하세요") #최초 검색된 데이터가 먼저 삭제 1건만 삭제 됨
+print(list1)
+#전체 데이터 삭제
+list1.clear()
 print(list1)
 
 
