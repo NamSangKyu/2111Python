@@ -30,6 +30,27 @@ print(list1)
 print(list2)
 
 #리스트 요소에 대한 추가, 삭제, 수정
+#리스트에 요소 추가, 추가시 맨 뒤에서 부터 순서대로 추가
+list1.append("추가")
+list1.append(100)
+print(list1)
+#원하는 인덱스 위치에 추가 --> 1번 인덱스부터 한칸씩 밀림
+list1.insert(1,"추가")
+print(list1)
+list1.insert(4,False)
+print(list1)
+#리스트 요소 수정
+list1[3] = 777 #원하는 인덱스 번호, 값을 새로 저장
+print(list1)
+#6번 요소를 3.1415로 수정
+list1[6] = 3.1415
+print(list1)
+#리스트 요소 삭제
+list1.pop() #맨 마지막 요소 삭제
+print(list1)
+list1.pop(3)#3번 인덱스에 대한 요소 삭제
+print(list1)
+
 
 
 
