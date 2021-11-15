@@ -19,4 +19,11 @@ dict1['박영수'] = 77
 print(dict1)
 dict1.setdefault('곽용',90)
 print(dict1)
-
+#삭제
+dict1.pop('박영수') #데이터 삭제도 키값으로 함
+print(dict1)
+dict1.popitem() #맨 마지막 키캆에 해당하는 데이터 삭제
+print(dict1)
+#수정
+dict1['홍길동'] = 99
+print(dict1)
