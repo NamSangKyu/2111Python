@@ -14,6 +14,20 @@ print(min(lst),min(2,1,5,3,4,6,7))
 #거듭제곱
 print(pow(2,10)) #2의 10승
 print(pow(2,-2)) #2의 -2승
+#반올림
+print(round(156.12345,0))
+print(round(156.12345,1))
+print(round(156.12345,2))
+print(round(156.12345,3))
+print(round(156.12345,4))
+print(round(156.12345,-1))
+print(round(156.12345,-2))
+#총합 함수
+list1 = [123,53,1,514,12,5341]
+list2 = ['H','e','l','l','o']
+print(sum(list1))
+#숫자 이외의 값은 sum 연산이 X 에러 처리
+#print(sum(list2))
 
 
 
