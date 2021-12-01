@@ -20,7 +20,7 @@ a=6
 print(eval('a*5'))
 print(eval('min(100,200,300)'))
 print("----------")
-print(format(1000000))
+print(format(1000000)) # str(1000000) 동일한 효과
 print(format(1000000,'_'))
 print(format(1000000,','))
 print("----------")
