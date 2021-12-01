@@ -29,6 +29,8 @@ for n in zip(list1,list2):
     print(n)
 print("--------------")
 #159p 기본예제
-
+months = [31,28,31,30,31,30,31,31,30,31,30,31]
+for month, day in enumerate(months):
+    print('{}월={}일'.format(month+1,day))
 
 
