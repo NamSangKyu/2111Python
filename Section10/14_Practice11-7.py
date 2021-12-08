@@ -10,13 +10,13 @@
     -5  -4  -3  -2  -1
 """
 def check_palindrome(str):
-    for i in range(0,len(str)//2):
+    for i in range(len(str)//2):
         if str[i] != str[-(i+1)]:
             return False
     return True
 
 def check_palindrome(str):
-    for i in range(0,len(str)//2):
+    for i in range(len(str)//2):
         if str[i] != str[len(str)-1-i]:
             return False
     return True
