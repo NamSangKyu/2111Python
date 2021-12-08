@@ -15,6 +15,12 @@ def check_palindrome(str):
             return False
     return True
 
+def check_palindrome(str):
+    for i in range(0,len(str)//2):
+        if str[i] != str[len(str)-1-i]:
+            return False
+    return True
+
 str = input('문자열 입력 >>> ')
 print(check_palindrome(str))
 
