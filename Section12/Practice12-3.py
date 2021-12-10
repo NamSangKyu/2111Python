@@ -34,7 +34,7 @@ for i in range(5):
     else:
         lose+=1
         msg = '당신이 졌습니다.'
-    print(f'당신은 {lst[player-1]}선택, 컴퓨터는 {computer-1}선택, {msg}')
+    print(f'당신은 {lst[player-1]}선택, 컴퓨터는 {lst[computer-1]}선택, {msg}')
 print(f'당신의 전적은 승 : {win}, 무 : {draw}, 패 : {lose}')
 
 
