@@ -18,3 +18,6 @@ person1.setting_data('홍길동',20)
 person1.print_person_info()
 
 #person2로 Person 객체 생성 후 임의 데이터 넣은 후 출력
+person2 = Person()
+person2.setting_data('김철수',35)
+person2.print_person_info()
