@@ -25,9 +25,39 @@ class TV:
         else:
             print('TV 전원 Off')
 
+    def ch_up(self):
+        if self.ch == 567:
+            self.ch = 1
+        else:
+            self.ch+=1
+        print(f'현재 채널 : {self.ch}')
+
+    def ch_down(self):
+        if self.ch == 1:
+            self.ch = 567
+        else:
+            self.ch-=1
+        print(f'현재 채널 : {self.ch}')
+
+    def vol_up(self):
+        if self.vol < 50:
+            self.vol += 1
+        print(f'현재 음량 : {self.vol}')
+
+    def vol_down(self):
+        if self.vol > 0:
+            self.vol -= 1
+        print(f'현재 음량 : {self.vol}')
+
 tv = TV()
 tv.init()
 tv.power_onoff()
 tv.power_onoff()
 tv.power_onoff()
 tv.power_onoff()
+# for i in range(600):
+#     tv.ch_up()
+# for i in range(50):
+#     tv.ch_down()
+for i in range(50):
+    tv.vol_down()
