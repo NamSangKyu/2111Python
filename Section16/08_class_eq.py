@@ -16,13 +16,36 @@ class Number:
         print('__ne__ 실행')
         #return self.n1 != other.n1 or self.n2 != other.n2
         return not self == other
+    # <
+    def __lt__(self, other):
+        print('__lt__ 실행')
+        return self.sum() < other.sum()
+
+    # <=
+    def __le__(self, other):
+        print('__le__ 실행')
+        return self.sum() <= other.sum()
+
+    # >
+    def __gt__(self, other):
+        print('__gt__ 실행')
+        return self.sum() > other.sum()
+
+    # >=
+    def __ge__(self, other):
+        print('__ge__ 실행')
+        return self.sum() >= other.sum()
+
+
 n1 = Number(10,20)
 n2 = Number(10,20)
 n3 = n1
-print(n1.sum())
-print(n2.sum())
 print(n1,n2,n3)
 print(n1 == n2) #일반적으로는 메모리 주소값으로 비교
 print(n1 == n3)
-n1.n1 = 100
+n1.n1 = 5
 print(n1 != n2)
+print(n1 < n2)
+print(n1 <= n2)
+print(n1 > n2)
+print(n1 >= n2)
