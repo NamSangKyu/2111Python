@@ -1,6 +1,9 @@
 import matplotlib.pyplot as plt
 import wordcloud
-
+'''
+https://youtu.be/VqsEAEleIvw
+비주얼 스튜디오 설치 C++
+'''
 words ={
     '파이썬':20,
     '빅데이터':5,
