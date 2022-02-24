@@ -1,9 +1,11 @@
-import csv
-cctv_set = set()
-with open('cctv.csv','rt',newline='') as file:
-    count = 0
-    csv_reader = csv.reader(file)
-    for line in csv_reader:
-        cctv_set.add(line[6])
+import json
 
-print(cctv_set)
+with open('cctv.json','rt', encoding='utf-8') as file:
+    json_reader = file.read()
+    dict_list = json.loads(json_reader)
+
+print(dict_list)
+kind = set()
+for data in dict_list:
+    kind.add(data['단속구분'])
+print(kind)
